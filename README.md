@@ -61,28 +61,22 @@ Copy your API Key
 
 ✍️ 4️⃣ Add Your API Key
 Open the main.py file and find this line:
-
-python
-Copy
-Edit
+``` bash
 API_KEY = "your_actual_api_key_here"
+```
 Replace it with your real key:
-
-python
-Copy
-Edit
+```bash
 API_KEY = "your_real_api_key"
+```
 🚀 5️⃣ Run the FastAPI Server
-bash
-Copy
-Edit
+```bash
 uvicorn main:app --reload
+```
 Then open your browser and navigate to:
 
-cpp
-Copy
-Edit
+``` bash
 http://127.0.0.1:8000/
+```
 You’ll see the dashboard displaying live route demand and price trend charts! ✅
 
 
