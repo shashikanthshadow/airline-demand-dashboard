@@ -1,12 +1,12 @@
 # ✈️ Airline Market Demand Web App
 
-A FastAPI-based interactive dashboard that fetches, processes, and visualizes real-time airline demand trends using the **AviationStack API**.
+A **FastAPI-based interactive dashboard** that fetches, processes, and visualizes real-time airline demand trends using the **AviationStack API**.
 
 This tool is designed to help hospitality and travel-related businesses (e.g., hostels, travel agencies) analyze air travel market trends, identify high-demand routes, and understand price fluctuations.
 
 ---
 
-### 🎥 Demo
+## 🎥 Demo
 
 > A quick preview of the working dashboard:
 
@@ -37,15 +37,17 @@ This tool is designed to help hospitality and travel-related businesses (e.g., h
 
 ## 🚀 Run Locally (with Conda & FastAPI)
 
+### 1️⃣ Clone the Repository
+
 ```bash
-# 1️⃣ Clone the repository
 git clone https://github.com/shashikanthshadow/airline-demand-dashboard.git
 cd airline-demand-dashboard
-
-# 2️⃣ Create and activate the Conda environment
+2️⃣ Create and Activate the Conda Environment
+bash
+Copy
+Edit
 conda env create -f environment.yml
 conda activate airlineapp
-
 🔑 3️⃣ Get Your Free API Key
 This app uses the AviationStack API to fetch real-time flight data.
 
@@ -53,27 +55,35 @@ Visit https://aviationstack.com/
 
 Click "Sign Up Free"
 
-Once signed in, go to your Dashboard
+After signing in, go to your Dashboard
 
 Copy your API Key
 
 ✍️ 4️⃣ Add Your API Key
-Open the main.py file and replace this line:
+Open the main.py file and find this line:
 
 python
 Copy
 Edit
 API_KEY = "your_actual_api_key_here"
-with your own key.
+Replace it with:
 
+python
+Copy
+Edit
+API_KEY = "your_real_api_key"
 🚀 5️⃣ Run the FastAPI Server
 bash
 Copy
 Edit
 uvicorn main:app --reload
-Then visit: http://127.0.0.1:8000/
+Then open your browser and navigate to:
 
-You’ll see the dashboard displaying live route demand and price trend charts!
+cpp
+Copy
+Edit
+http://127.0.0.1:8000/
+You’ll see the dashboard displaying live route demand and price trend charts! ✅
 
 📁 Project Structure
 cpp
@@ -92,5 +102,4 @@ airline-demand-dashboard/
 🧠 Author
 Shashikanth Rao
 GitHub: @shashikanthshadow
-
 
