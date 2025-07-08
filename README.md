@@ -19,7 +19,14 @@ A FastAPI-based dashboard that fetches and visualizes real-time airline demand t
 ## 🚀 Run Locally
 
 ```bash
-git clone <repo_url>
-cd airline-demand-fastapi
-pip install -r requirements.txt
+# 1️⃣ Clone the repository
+git clone https://github.com/shashikanthshadow/airline-demand-dashboard.git
+cd airline-demand-dashboard
+
+# 2️⃣ Create and activate the Conda environment
+conda env create -f environment.yml
+conda activate airlineapp
+
+# 3️⃣ Run the FastAPI server
 uvicorn main:app --reload
+
