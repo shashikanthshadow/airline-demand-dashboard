@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Airline Demand Dashboard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <h1>✈️ Airline Booking Market Demand</h1>
+
+    <section>
+        <h2>📈 Price Trend (Mock Data per Route)</h2>
+        <canvas id="priceChart" width="800" height="400"></canvas>
+    </section>
+
+    <section>
+        <h2>🗺️ Top Popular Routes</h2>
+        <ul id="routeList"></ul>
+    </section>
+
+    <script>
+        fetch('/api/data')
+            .then(response => response.json())
+            .then(data => {
+                const ctx = document.getElementById('priceChart').getContext('2d');
+
+                const datasets = Object.entries(data.route_prices).map(([route, prices]) => {
+                    return {
+                        label: route,
+                        data: prices,
+                        fill: false,
+                        tension: 0.3,
+                        borderColor: `hsl(${Math.random() * 360}, 70%, 50%)`
+                    };
+                });
+
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: data.dates,
+                        datasets: datasets
+                    },
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                display: true,
+                                position: 'bottom'
+                            },
+                            tooltip: {
+                                mode: 'index',
+                                intersect: false
+                            }
+                        },
+                        scales: {
+                            y: {
+                                title: {
+                                    display: true,
+                                    text: 'Estimated Price ($)'
+                                }
+                            },
+                            x: {
+                                title: {
+                                    display: true,
+                                    text: 'Date'
+                                }
+                            }
+                        }
+                    }
+                });
+
+                const routeList = document.getElementById('routeList');
+                data.popular_routes.forEach((route, index) => {
+                    const li = document.createElement('li');
+                    li.textContent = `${route} — Demand: ${data.demand[index]}`;
+                    routeList.appendChild(li);
+                });
+            });
+    </script>
+</body>
+</html>

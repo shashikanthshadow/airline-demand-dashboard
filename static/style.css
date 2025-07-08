@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f5f7fa;
+    color: #333;
+}
+
+h1 {
+    color: #003366;
+    text-align: center;
+}
+
+section {
+    margin: 30px auto;
+    max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul#routeList li {
+    font-size: 1.1em;
+    margin: 6px 0;
+}
