@@ -1,4 +1,5 @@
-✈️ Airline Market Demand Web App
+# ✈️ Airline Market Demand Web App
+
 A FastAPI-based interactive dashboard that fetches, processes, and visualizes real-time airline demand trends using the AviationStack API.
 This tool is designed to help hospitality and travel-related businesses (e.g., hostels, travel agencies) analyze air travel market trends, identify high-demand routes, and understand price fluctuations.
 
