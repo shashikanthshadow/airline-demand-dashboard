@@ -43,6 +43,11 @@ This tool is designed to help hospitality and travel-related businesses (e.g., h
 git clone https://github.com/shashikanthshadow/airline-demand-dashboard.git
 cd airline-demand-dashboard
 ```
+### 2️⃣ Create and Activate the Conda Environment
+```bash
+conda env create -f environment.yml
+conda activate airlineapp
+```
 ### 3️⃣ Get Your Free API Key
 Visit: https://aviationstack.com/
 
