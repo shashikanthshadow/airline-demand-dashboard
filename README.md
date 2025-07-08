@@ -43,7 +43,7 @@ This tool is designed to help hospitality and travel-related businesses (e.g., h
 git clone https://github.com/shashikanthshadow/airline-demand-dashboard.git
 cd airline-demand-dashboard
 ```
-3️⃣ Get Your Free API Key
+### 3️⃣ Get Your Free API Key
 Visit: https://aviationstack.com/
 
 Click Sign Up Free
@@ -52,7 +52,7 @@ After signing in, go to your Dashboard
 
 Copy your API Key
 
-✍️ 4️⃣ Add Your API Key
+### ✍️ 4️⃣ Add Your API Key
 Open the main.py file and find this line:
 ``` bash
 API_KEY = "your_actual_api_key_here"
@@ -61,7 +61,7 @@ Replace it with your real key:
 ```bash
 API_KEY = "your_real_api_key"
 ```
-🚀 5️⃣ Run the FastAPI Server
+### 🚀 5️⃣ Run the FastAPI Server
 ```bash
 uvicorn main:app --reload
 ```
