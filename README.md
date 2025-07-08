@@ -48,12 +48,13 @@ Copy
 Edit
 conda env create -f environment.yml
 conda activate airlineapp
-🔑 3️⃣ Get Your Free API Key
+
+### 3️⃣ Get Your Free API Key
 This app uses the AviationStack API to fetch real-time flight data.
 
 Visit https://aviationstack.com/
 
-Click "Sign Up Free"
+Click Sign Up Free
 
 After signing in, go to your Dashboard
 
@@ -66,7 +67,7 @@ python
 Copy
 Edit
 API_KEY = "your_actual_api_key_here"
-Replace it with:
+Replace it with your real key:
 
 python
 Copy
@@ -85,21 +86,6 @@ Edit
 http://127.0.0.1:8000/
 You’ll see the dashboard displaying live route demand and price trend charts! ✅
 
-📁 Project Structure
-cpp
-Copy
-Edit
-airline-demand-dashboard/
-├── main.py
-├── templates/
-│   └── index.html
-├── static/
-│   └── style.css
-├── assets/
-│   └── demo.gif
-├── environment.yml
-├── README.md
 🧠 Author
 Shashikanth Rao
 GitHub: @shashikanthshadow
-
