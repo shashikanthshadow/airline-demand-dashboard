@@ -1,55 +1,59 @@
-# ✈️ Airline Market Demand Web App
-
-A **FastAPI-based interactive dashboard** that fetches, processes, and visualizes real-time airline demand trends using the **AviationStack API**.
+✈️ Airline Market Demand Web App
+A FastAPI-based interactive dashboard that fetches, processes, and visualizes real-time airline demand trends using the AviationStack API.
 
 This tool is designed to help hospitality and travel-related businesses (e.g., hostels, travel agencies) analyze air travel market trends, identify high-demand routes, and understand price fluctuations.
 
----
+🎥 Demo
+A quick preview of the working dashboard:
 
-## 🎥 Demo
+🔧 Features
+🌍 Live API Integration: Fetches real-time flight data from the AviationStack API
 
-> A quick preview of the working dashboard:
+📊 Trend Visualization: Displays estimated price trends over 10 days using Chart.js
 
-![Airline Dashboard Demo](assets/demo.gif)
+🛫 Route Insights: Identifies the most popular routes based on flight frequency
 
----
+📈 Dynamic Charting: Interactive line charts with tooltips for route-wise pricing
 
-## 🔧 Features
+🧼 Data Cleaning & Processing: Flight data is filtered and sorted using pandas
 
-- 🌍 **Live API Integration**: Fetches real-time flight data from the AviationStack API  
-- 📊 **Trend Visualization**: Displays estimated price trends over 10 days using Chart.js  
-- 🛫 **Route Insights**: Identifies the most popular routes based on flight frequency  
-- 📈 **Dynamic Charting**: Interactive line charts with tooltips for route-wise pricing  
-- 🧼 **Data Cleaning & Processing**: Flight data is filtered and sorted using pandas  
-- 🎨 **Frontend with Jinja2**: Clean, responsive HTML dashboard styled with CSS  
+🎨 Frontend with Jinja2: Clean, responsive HTML dashboard styled with CSS
 
----
+📦 Tech Stack
+Backend
 
-## 📦 Tech Stack
+Frontend
 
-| Backend   | Frontend     | Data/API           |
-|-----------|--------------|--------------------|
-| FastAPI   | HTML, CSS    | AviationStack API  |
-| Uvicorn   | Chart.js     | pandas             |
-| Jinja2    | Vanilla JS   | datetime, requests |
+Data/API
 
----
+FastAPI
 
-## 🚀 Run Locally (with Conda & FastAPI)
+HTML, CSS
 
-### 1️⃣ Clone the Repository
+AviationStack API
 
-```bash
+Uvicorn
+
+Chart.js
+
+pandas
+
+Jinja2
+
+Vanilla JS
+
+datetime, requests
+
+🚀 Run Locally (with Conda & FastAPI)
+1️⃣ Clone the Repository
 git clone https://github.com/shashikanthshadow/airline-demand-dashboard.git
 cd airline-demand-dashboard
+
 2️⃣ Create and Activate the Conda Environment
-bash
-Copy
-Edit
 conda env create -f environment.yml
 conda activate airlineapp
 
-### 3️⃣ Get Your Free API Key
+3️⃣ Get Your Free API Key
 This app uses the AviationStack API to fetch real-time flight data.
 
 Visit https://aviationstack.com/
@@ -63,27 +67,19 @@ Copy your API Key
 ✍️ 4️⃣ Add Your API Key
 Open the main.py file and find this line:
 
-python
-Copy
-Edit
 API_KEY = "your_actual_api_key_here"
+
 Replace it with your real key:
 
-python
-Copy
-Edit
 API_KEY = "your_real_api_key"
+
 🚀 5️⃣ Run the FastAPI Server
-bash
-Copy
-Edit
 uvicorn main:app --reload
+
 Then open your browser and navigate to:
 
-cpp
-Copy
-Edit
 http://127.0.0.1:8000/
+
 You’ll see the dashboard displaying live route demand and price trend charts! ✅
 
 🧠 Author
