@@ -16,12 +16,12 @@ This tool is designed to help hospitality and travel-related businesses (e.g., h
 
 ## 🔧 Features
 
-- 🌍 **Live API Integration**: Fetches real-time flight data from the AviationStack API  
-- 📊 **Trend Visualization**: Displays estimated price trends over 10 days using Chart.js  
-- 🛫 **Route Insights**: Identifies the most popular routes based on flight frequency  
-- 📈 **Dynamic Charting**: Interactive line charts with tooltips for route-wise pricing  
-- 🧼 **Data Cleaning & Processing**: Flight data is filtered and sorted using pandas  
-- 🎨 **Frontend with Jinja2**: Clean, responsive HTML dashboard styled with CSS  
+ 🌍 **Live API Integration**: Fetches real-time flight data from the AviationStack API  
+ 📊 **Trend Visualization**: Displays estimated price trends over 10 days using Chart.js  
+ 🛫 **Route Insights**: Identifies the most popular routes based on flight frequency  
+ 📈 **Dynamic Charting**: Interactive line charts with tooltips for route-wise pricing  
+ 🧼 **Data Cleaning & Processing**: Flight data is filtered and sorted using pandas  
+ 🎨 **Frontend with Jinja2**: Clean, responsive HTML dashboard styled with CSS  
 
 ---
 
