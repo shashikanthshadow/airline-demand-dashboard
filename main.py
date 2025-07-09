@@ -13,7 +13,7 @@ templates = Jinja2Templates(directory="templates")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
 # AviationStack API Configuration
-API_KEY = "d031bb21b2a58568da6b56036ff9e7e3"
+API_KEY = "your_actual_api_key_here"
 BASE_URL = "http://api.aviationstack.com/v1/flights"
 
 def fetch_aviationstack_data():
